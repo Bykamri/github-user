@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Submission" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.Submission" parent="Base.Theme.Submission">
+        <item name="android:backgroundTint">@color/colorBase</item>
+        <item name="colorSecondary">@color/colorBase</item>
+    </style>
+
+    <style name="Bottom.Navigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/colorOnBaseVariant</item>
+        <item name="iconTint">@color/colorOnBase</item>
+        <item name="labelVisibilityMode">selected</item>
+        <item name="itemIconTint">@color/bottom_navigation_icon_color</item>
+        <item name="itemTextColor">@color/colorOnBase</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.Inactive</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.Active</item>
+    </style>
+
+    <style name="TextAppearance.Inactive" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/colorPrimaryVariant</item>
+    </style>
+
+    <style name="TextAppearance.Active" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/colorBase</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="windowSplashScreenAnimationDuration">300</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="postSplashScreenTheme">@style/Theme.Submission</item>
+    </style>
+</resources>
